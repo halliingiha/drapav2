@@ -1,5 +1,6 @@
 <template>
   <VideoBackground />
+  <!-- <div ref="navPlaceholder" class="h-12"></div> -->
   <NavBar />
   <Members />
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full h-[70vh] overflow-hidden">
+  <div class="relative w-full h-[70vh] sm:h-[800px] overflow-hidden">
     <video
       class="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-0.5"
       autoplay
