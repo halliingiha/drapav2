@@ -1,6 +1,7 @@
 <template>
   <div
-    class="w-full flex gap-6 p-4 md:flex-row flex-col md:flex-wrap items-center justify-center mt-10 mb-[3000px]"
+    class="w-full flex gap-6 p-4 md:flex-row flex-col md:flex-wrap items-center justify-center mt-10 mb-[30px]"
+    ref="membersSection"
   >
     <section
       class="flex flex-wrap sm:flex-nowrap gap-2 justify-around scroll-mt-[10rem] top-[30rem] h-auto w-full sm:px-10 sm:gap-0"

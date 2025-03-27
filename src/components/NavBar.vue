@@ -10,9 +10,13 @@
   >
     <span
       v-for="item in navItem"
-      class="px-3 py-1 rounded-2xl hover:bg-zinc-900 hover:cursor-pointer text-zinc-500"
-      :class="selectedNavItem === item.label ? 'bg-zinc-900' : 'bg-zinc-800'"
-      @click="selectNavItem(item.label)"
+      class="px-3 py-1 rounded-2xl hover:bg-zinc-900 hover:cursor-pointer text-zinc-500 text-xs md:text-[1rem]"
+      :class="
+        selectedNavItem === item.label
+          ? 'bg-zinc-900 border border-gray-400/50'
+          : 'bg-zinc-800'
+      "
+      @click="selectNavItem(item.label), scrollToSection(item.scrollTo)"
       >{{ item.label }}</span
     >
   </div>
@@ -25,12 +29,18 @@ const isSticky = ref(false);
 const navbar = ref(null);
 const lastScrollY = ref(0);
 
+defineProps({
+  scrollToSection: Function,
+});
+
 const navItem = ref([
   {
     label: "Members",
+    scrollTo: "members",
   },
   {
     label: "Social Media",
+    scrollTo: "socialMedia",
   },
   {
     label: "About",
