@@ -8,6 +8,9 @@
   <section ref="socialMediaSection">
     <SocialMedia />
   </section>
+  <section ref="aboutSection">
+    <About />
+  </section>
 </template>
 
 <script setup>
@@ -17,11 +20,16 @@ import Members from "./components/Members.vue";
 import VideoBackground from "./components/VideoBackground.vue";
 import NavBar from "./components/NavBar.vue";
 import SocialMedia from "./components/SocialMedia.vue";
+import About from "./components/About.vue";
+
 const membersSection = ref(null);
 const socialMediaSection = ref(null);
+const aboutSection = ref(null);
+
 const sectionRefs = {
   members: { ref: membersSection, offset: 82 },
   socialMedia: { ref: socialMediaSection, offset: 282 },
+  about: { ref: aboutSection, offset: 382 },
   // Add more sections here easily
 };
 

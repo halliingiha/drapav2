@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex gap-4 p-4 flex-col md:flex-wrap items-center justify-center mt-10 mb-24"
+    class="w-full flex gap-4 p-4 flex-col md:flex-wrap items-center justify-center mt-10 mb-4"
     ref="socialMediaSection"
   >
     <div class="flex flex-row gap-6 w-full h-10 items-center justify-center">
@@ -20,24 +20,23 @@
         <iframe
           style="border-radius: 12px"
           src="https://open.spotify.com/embed/artist/6AVM9rg36bwti89n0X7qNw?utm_source=generator&theme=0"
-          class="w-full md:w-[560px] h-[352px] shadow-md"
+          class="w-full md:w-[560px] h-[352px] custom-shadow"
           frameBorder="0"
           allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
       </div>
-      <div class="w-full flex justify-center rounded-lg overflow-hidden">
+      <div class="w-full flex justify-center">
         <iframe
-          width="560"
-          height="315"
-          class="w-full md:w-[560px] h-[352px] shadow-md"
+          style="border-radius: 12px"
+          class="w-full md:w-[560px] h-[352px] custom-shadow"
           src="https://www.youtube.com/embed/RkT_ASKoi9A?si=akxiIMm-2LiDmS_6"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          allowfullscreen=""
         ></iframe>
       </div>
     </div>

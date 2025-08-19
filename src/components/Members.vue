@@ -19,6 +19,7 @@
 
 <script setup lang="ts">
 import MemberCard from "./MemberCard.vue";
+
 import { ref } from "vue";
 // import jakobImg from "@/assets/members/jakob.jpg";
 

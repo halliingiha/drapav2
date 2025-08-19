@@ -44,6 +44,7 @@ const navItem = ref([
   },
   {
     label: "About",
+    scrollTo: "about",
   },
   {
     label: "Contact",
